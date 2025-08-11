@@ -1,4 +1,4 @@
-#Get alert by 
+#Get text alert of required field  
 
 JavascriptExecutor js = (JavascriptExecutor)driver;
 
