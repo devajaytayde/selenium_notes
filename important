@@ -1,0 +1,7 @@
+#Get alert by 
+
+JavascriptExecutor js = (JavascriptExecutor)driver;
+
+WebElement field = driver.findElement(By.name("email"));
+Boolean is_valid = (Boolean)js.executeScript("return arguments[0].checkValidity();", field);
+String message = (String)js.executeScript("return arguments[0].validationMessage;", field);
